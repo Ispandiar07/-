@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ты – моё счастье</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #fff0f5;
+            padding: 50px;
+            color: #333;
+        }
+        h1 {
+            color: #ff1493;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .love-letter {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        .heart {
+            font-size: 100px;
+            color: #ff69b4;
+            animation: beat 1.5s infinite;
+            margin: 30px 0;
+        }
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .signature {
+            font-style: italic;
+            margin-top: 40px;
+            font-size: 1.2em;
+        }
+        #poem {
+            display: none;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #ffe6f2;
+            border-radius: 10px;
+            max-width: 500px;
+            border-left: 4px solid #ff69b4;
+        }
+        .love-button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .love-button:hover {
+            background-color: #ff1493;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">❤️</div>
+    <h1>Моя любимая</h1>
+    
+    <div class="love-letter">
+        <p>Если бы у меня была возможность исправить всё в один миг – я бы сделал это без колебаний.</p>
+        <p>Но даже если время нельзя повернуть назад, я хочу, чтобы ты знала:</p>
+        <p><strong>Ты – самое дорогое, что у меня есть.</strong></p>
+        <p>Каждый твой смех, каждая улыбка и ласка – всё это делает мою жизнь ярче.</p>
+    </div>
+
+    <button class="love-button" onclick="showPoem()">Нажми на меня</button>
+
+    <div id="poem">
+        <h3>Для тебя:</h3>
+        <p>Ты - как утро в январе,<br>
+        Как первый снег, как свет в тундре.<br>
+        Без тебя мне нелегко,<br>
+        Ты - моё всё, моё «ок».</p>
+        <p>Прости за глупые слова,<br>
+        Любовь сильнее, чем права.<br>
+        Давай начнём наш путь сначала,<br>
+        Чтоб не было печали.</p>
+    </div>
+
+    <div class="signature">Твой малыш </div>
+
+    <script>
+        function showPoem() {
+            const poem = document.getElementById('poem');
+            if (poem.style.display === 'block') {
+                poem.style.display = 'none';
+            } else {
+                poem.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
